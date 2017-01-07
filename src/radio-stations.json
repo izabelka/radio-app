@@ -1,0 +1,44 @@
+[
+  {
+    "name" :"Trójka",
+    "frequency" :"96,4",
+    "url" :"http://stream3.polskieradio.pl:8904/listen.pls",
+    "picture" :"https://dl.dropboxusercontent.com/u/107222235/radioApp/trojka.png"
+  },
+  {
+    "name" :"Antyradio",
+    "frequency" :"101,6",
+    "url" :"http://ant-waw-01.cdn.eurozet.pl:8602/listen.pls",
+    "picture" :"https://dl.dropboxusercontent.com/u/107222235/radioApp/antyradio.png"
+  },
+  {
+    "name" :"Planeta FM",
+    "frequency" :"99,4",
+    "url" :"http://pla-net-01.cdn.eurozet.pl:8700/listen.pls",
+    "picture" :"https://dl.dropboxusercontent.com/u/107222235/radioApp/planeta.png"
+  },
+  {
+    "name" :"Radio Eska",
+    "frequency": "93,0",
+    "url": "http://acdn.smcloud.net/t040-1.mp3.pls",
+    "picture" :"https://dl.dropboxusercontent.com/u/107222235/radioApp/eska.png"
+  },
+  {
+    "name" :"Eska Rock",
+    "frequency" :"93,3",
+    "url" :"http://acdn.smcloud.net/t041-1_mp3.plsu",
+    "picture" :"https://dl.dropboxusercontent.com/u/107222235/radioApp/eskarock.png"
+  },
+  {
+    "name" :"Radio ZET",
+    "frequency" :"107,5",
+    "url" :"http://radiozetmp3-07.eurozet.pl:8400/listen.pls",
+    "picture" :"https://dl.dropboxusercontent.com/u/107222235/radioApp/zet.png"
+  },
+  {
+    "name" :"Złote Przeboje",
+    "frequency" :"88,4",
+    "url" :"http://www.tuba.fm/stream.pls?radio=9&mp3=1",
+    "picture": "https://dl.dropboxusercontent.com/u/107222235/radioApp/zlote.png"
+  }
+]
