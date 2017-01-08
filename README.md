@@ -10,6 +10,8 @@ I created a simple radio widget for Netguru recruitment task a while ago. My jav
 ### To do:
 1. [x] Import stations from json file
 2. [x] Build component that displays all radio stations
-3. [ ] Make selected radio station expand
+3. [x] Make selected radio station expand
+4. [x] Display radio station image (logo)
+5. [ ] Hide radio station that are not selected
 4. [ ] Add real radio stations players
 5. [ ] Publish to Github Pages
