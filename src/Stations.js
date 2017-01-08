@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
+import ShowStation from './ShowStation';
 
 class Stations extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hidden: true
+      showSelectedStation: false
     };
   }
-  
+
+  showStation() {
+    this.setState({
+      showSelectedStation: true
+    });
+  }
+
   componentWillMount() {
     this.style = {
       backgroundImage: 'url(' + this.props.station.picture + ')'      
@@ -15,20 +22,17 @@ class Stations extends Component {
   }
 
   render() {
+    var expandLi = {
+      'height': ''
+    };
+    if (this.state.showSelectedStation) {
+        expandLi = {
+          'height': 10+'em'
+        };
+    }
     return (
-        <li>
-          <div className="station-selected">
-            <div className="minus-circle">
-              <div className="minus-stroke">
-              </div>
-            </div>
-            <div className="picture" style={this.style}>
-            </div>
-            <div className="minus-circle">
-              <div className="minus-stroke"></div>
-              <div className="plus-stroke"></div>
-            </div>
-          </div>
+        <li style={expandLi} onClick={this.showStation.bind(this)}>
+          { this.state.showSelectedStation ? <ShowStation backgroundImage={this.style}/> : null }
           <div className="station-container">
             <div className="station-name">
               {this.props.station.name}

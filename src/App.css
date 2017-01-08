@@ -120,7 +120,7 @@ li {
   margin: 0 1em;
   height: 2.9em;
   font-size: 1.35em;
-  transition: .3s; }
+  transition: .2s; }
   li:not(:last-child) {
     border-bottom: 1px solid #3C3C45; }
 
@@ -132,7 +132,7 @@ li {
   cursor: pointer; }
 .station-selected {
   width: 100%;
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   animation: opacity-change 2s; }
