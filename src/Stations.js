@@ -10,9 +10,15 @@ class Stations extends Component {
   }
 
   showStation() {
-    this.setState({
-      showSelectedStation: true
-    });
+    if(!this.state.showSelectedStation){
+        this.setState({
+          showSelectedStation: true 
+        })
+      }else{
+        this.setState({
+          showSelectedStation: false 
+        })
+    }
   }
 
   componentWillMount() {
