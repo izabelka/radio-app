@@ -9,7 +9,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      stationList: []
+      stationList: [],
+      audioPlayer: 'url'
     };
   }
 
@@ -18,13 +19,13 @@ class App extends Component {
     stationList = stationList.map(function(station, index) {
       return(
         <Stations key={ index }
-          station={ station } />
+          station={ station }/>
       )
     })
 
     return (
       <div>
-        <audio id="audio-player" autoPlay></audio>
+        <audio id="audio-player" src={this.state.audioPlayer} autoPlay></audio>
         <div className="radio-container">
           <div className="radio-header">
             <div className="arrow-back"></div>

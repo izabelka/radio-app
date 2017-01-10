@@ -9,7 +9,7 @@ class Stations extends Component {
     };
   }
 
-  showStation() {
+  selectStation() {
     if(!this.state.showSelectedStation){
         this.setState({
           showSelectedStation: true 
@@ -37,8 +37,8 @@ class Stations extends Component {
         };
     }
     return (
-        <li style={expandLi} onClick={this.showStation.bind(this)}>
-          { this.state.showSelectedStation ? <ShowStation backgroundImage={this.style}/> : null }
+        <li style={expandLi} onClick={this.selectStation.bind(this)}>
+          { this.state.showSelectedStation && <ShowStation backgroundImage={this.style}/>}
           <div className="station-container">
             <div className="station-name">
               {this.props.station.name}
