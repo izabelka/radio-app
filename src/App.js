@@ -9,9 +9,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      stationList: [],
-      audioPlayer: 'url'
+      stationList: radioStations,
+      audioPlayer: ' '
     };
+    this.changeAudioPlayerSrc = this.changeAudioPlayerSrc.bind(this);
+  }
+
+  changeAudioPlayerSrc (newSrc) {
+    this.setState({
+      audioPlayer: newSrc 
+    })
   }
 
   render() {
@@ -19,9 +26,9 @@ class App extends Component {
     stationList = stationList.map(function(station, index) {
       return(
         <Stations key={ index }
-          station={ station }/>
+          station={ station } changeSrc={this.changeAudioPlayerSrc}/>
       )
-    })
+    }, this)
 
     return (
       <div>
@@ -48,12 +55,6 @@ class App extends Component {
         </div>
       </div>
     );
-  }
-
-  componentDidMount() {
-    this.setState({
-      stationList: radioStations
-    });
   }
 }
 
