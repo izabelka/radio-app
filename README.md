@@ -12,6 +12,7 @@ I created a simple radio widget for Netguru recruitment task a while ago. My jav
 2. [x] Build component that displays all radio stations
 3. [x] Make selected radio station expand
 4. [x] Display radio station image (logo)
-5. [ ] Hide radio station that are not selected
-4. [ ] Add real radio stations players
-5. [ ] Publish to Github Pages
+5. [ ] Hide radio stations that are not selected
+6. [x] Add real radio stations players
+7. [x] Display current playing station and add its url to audio src attribute
+8. [ ] Publish to Github Pages
