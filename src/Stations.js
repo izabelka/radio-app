@@ -14,7 +14,7 @@ class Stations extends Component {
         this.setState({
           showSelectedStation: true
         });
-        this.props.changeSrc(this.props.station.url);
+        this.props.changeSrc(this.props.station.url, this.props.station.name);
       }else{
         this.setState({
           showSelectedStation: false 

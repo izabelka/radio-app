@@ -10,14 +10,16 @@ class App extends Component {
     super(props);
     this.state = {
       stationList: radioStations,
-      audioPlayer: ' '
+      audioPlayer: ' ',
+      currentStationName: ' '
     };
     this.changeAudioPlayerSrc = this.changeAudioPlayerSrc.bind(this);
   }
 
-  changeAudioPlayerSrc (newSrc) {
+  changeAudioPlayerSrc (newSrc, newName) {
     this.setState({
-      audioPlayer: newSrc 
+      audioPlayer: newSrc ,
+      currentStationName: newName
     })
   }
 
@@ -48,8 +50,10 @@ class App extends Component {
           </div>
           <div className="radio-footer">
             <div className="currently-playing">
+            currently playing
             </div>
             <div className="radio-footer-station-name">
+              {this.state.currentStationName}
             </div>
           </div>
         </div>
